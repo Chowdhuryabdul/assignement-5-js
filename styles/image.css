@@ -1,0 +1,37 @@
+*{
+
+}
+
+body{
+
+}
+
+h1{
+ /* background-color: red; */
+ /* border: 1px solid blue; */
+ /* width: fit-content; */
+text-align: center;
+}
+
+
+/* use of relative unit to make responsive */
+/* #image{
+ width: 800px; this is absolute
+width: 100%; this is responsive as it is relative unit
+
+} */
+
+
+/* use of relative unit and object fit property to make responsive */
+.container{
+    width: 80%;
+    margin: auto;
+    border: solid palevioletred 10px;
+}
+
+
+.container img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* if i need to use the fixed height property, then in case of responsive it will change the image quality. in that time i need to use the object property which will help to hold the proper image size but it will crop the image from both sides during responsive. */
+}

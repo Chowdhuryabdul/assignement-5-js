@@ -1,0 +1,169 @@
+header {
+    background-color: var(--clr-header);
+    position: sticky; /* -to make header sticky */
+    top: 0; /* -to make header sticky */
+    transition: background-color 0.4s ease-in-out; /* -to make header sticky */
+}
+
+header.scrolled {  /* -to make header sticky. the 'scrolled' extra class which will be added by the javascript */
+    background-color: red;
+    opacity: 0.98;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* margin-bottom: 0; */
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 0.5em;
+    transition: color 0.4s ease-in-out; /* -to make header sticky */
+}
+
+header .scrollled .header__menu{  /* -to make header sticky */
+    color: red;
+}
+
+.header__btn {
+    font-size: var(--size-xl);
+}
+
+.header__description-1 {
+    font-size: var(--size-xl);
+    color: var(--clr-dark);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+
+.header__description-2 {
+    font-size: var(--size-xl);
+    color: var(--clr-zinc400);
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+.header__menu-img-1 {
+    height: 3rem;
+    width: 3rem;
+    display: block;
+}
+
+.header__menu-img-2 {
+    height: 1.75rem;
+    width: 1.75rem;
+    display: block;
+}
+
+.header__bars {
+    color: var(--clr-dark);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    display: block;
+} 
+
+.header__menu {
+    display: none;
+}
+
+
+/* media queries  */
+/* For the XS  */
+/* @media(min-width: 475px){} */
+/* For the Sm  */
+/* @media(min-width: 640px){} */
+/* For the medium  */
+@media(min-width: 768px) {
+
+    .header__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 0.5em;
+
+    }
+
+    .header__btn {
+        font-size: var(--size-xl);
+    }
+
+
+    .header__description-1 {
+        font-size: var(--size-xl);
+        color: var(--clr-dark);
+        font-weight: 600;
+        letter-spacing: -0.05em;
+    }
+
+
+    .header__description-2 {
+        font-size: var(--size-xl);
+        color: var(--clr-zinc400);
+        font-weight: 500;
+        letter-spacing: -0.05em;
+    }
+
+    .header__menu-img-1 {
+        height: 3rem;
+        width: 3rem;
+        display: block;
+    }
+
+    .header__menu-img-2 {
+        height: 1.75rem;
+        width: 1.75rem;
+        display: block;
+    }
+
+    .header__bars {
+        display: none;
+    }
+
+}
+
+/* For the lg  */
+@media(min-width: 1024px){
+ 
+
+    .header__btn {
+        font-size: var(--size-xl);
+    }
+
+
+    .header__description-1 {
+        font-size: var(--size-xl);
+       
+    }
+
+
+    .header__description-2 {
+        font-size: var(--size-xl);
+        
+    }
+
+    .header__menu-img-1 {
+        height: 3rem;
+        width: 3rem;
+        display: block;
+    }
+
+    .header__menu-img-2 {
+        height: 1.75rem;
+        width: 1.75rem;
+        display: block;
+    }
+
+}
+/* For the Xl  */
+/* @media(min-width: 1280px){} */
+/* For the 2xl  */
+/* @media(min-width: 1536px){} */

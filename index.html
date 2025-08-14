@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is the donation page for the flood</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontshare  -->
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,400,500,700&f[]=satoshi@300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/component/header.css">
+    <link rel="stylesheet" href="styles/component/hero.css">
+    <link rel="stylesheet" href="styles/component/donation.css">
+    <link rel="stylesheet" href="styles/component/history.css">  
+    <link rel="stylesheet" href="styles/component/modal.css">
+    <link rel="stylesheet" href="styles/utils.css">
 </head>
+
 <body>
+    <!-- this is the header section  -->
+    <header class="container">
+        <nav class="header">
+            <div class="header__menu">
+                <button class="button btn header__btn ">Blog</button>
+            </div>
+            <ul class="header__menu">
+                <li><img class="header__menu-img-1" src="assets/logo.png" alt=""></li>
+                <li class="header__description-1">Donate Bangladesh</li>
+            </ul>
+            <ul class="header__menu">
+                <li><img class="header__menu-img-2" src="assets/coin.png" alt=""></li>
+                <li class="header__description-2"></li>
+                <li class="header__description-2">5000</li>
+                <li class="header__description-2">BDT</li>
+            </ul>
+            <button class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <!-- this is the end of  header section  -->
     
+    <main>
+        <!-- this the hero section  -->
+       <section class="hero container section">
+       <div class="hero__menu">
+         <button class="button btn hero__btn">Donation</button>
+        <button class="button btn hero__btn-1">History</button>
+       </div>
+       </section>
+        <!-- this the end of the hero section  -->
+         <!-- this is the donation card start -->
+         <section class="container section donation__card ">
+            <!-- project-1  -->
+             <div class="donation__card-part-first">
+                <img class="donation__img" src="assets/noakhali.png" alt="First project picture">
+             </div>
+             <div class="donation__card-part-second">
+               <ul class="donation__menu">
+                <li class="donation__sub-menu-img"><img src="assets/coin.png" alt=""></li>
+                <li class="donation__sub-menu">0</li>
+                <li class="donation__sub-menu">BDT</li>
+               </ul>
+                <h3 class="donation__title">Donate for Flood at Noakhali, Bangladesh</h3>
+                <p class="donation__description"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <input class="donation__inputfield" type="number" placeholder="Write donation amount">
+                <button class="btn button donation__btn">Donate Now</button>
+             </div>
+             
+              <!-- this is the donation card end -->
+         </section>
+         <!-- project 2  -->
+           <section class="container section donation__card ">
+           
+             <div class="donation__card-part-first">
+                <img class="donation__img" src="assets/feni.png" alt="First project picture">
+             </div>
+             <div class="donation__card-part-second">
+               <ul class="donation__menu">
+                <li class="donation__sub-menu-img"><img src="assets/coin.png" alt=""></li>
+                <li class="donation__sub-menu">600</li>
+                <li class="donation__sub-menu">BDT</li>
+               </ul>
+                <h3 class="donation__title">Donate for Flood Relief in Feni, Bangladesh</h3>
+                <p class="donation__description"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                <input class="donation__inputfield" type="number" placeholder="Write donation amount">
+                <button class="btn button donation__btn">Donate Now</button>
+             </div>
+             
+              <!-- this is the donation card end -->
+         </section>
+         <!-- project 3  -->
+           <section class="container section donation__card ">
+             <div class="donation__card-part-first">
+                <img class="donation__img" src="assets/quota-protest.png" alt="First project picture">
+             </div>
+             <div class="donation__card-part-second">
+               <ul class="donation__menu">
+                <li class="donation__sub-menu-img"><img src="assets/coin.png" alt=""></li>
+                <li class="donation__sub-menu">2600</li>
+                <li class="donation__sub-menu">BDT</li>
+               </ul>
+                <h3 class="donation__title">Aid for Injured in the Quota Movement</h3>
+                <p class="donation__description"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                <input class="donation__inputfield" type="number" placeholder="Write donation amount">
+                <button class="btn button donation__btn">Donate Now</button>
+             </div>             
+         <!-- this is the donation card end -->
+         </section>
+         <section class="modal__container section container">
+             <div class="modal__div">
+               <h1 class="modal__title">Congrates!</h1>
+               <img src="assets/coin.png" alt="" class="modal__img">
+               <p class="modal__description">You Have Donated For Humankind</p>
+               <h3 class="modal__subtitle">Sucessfully</h3>
+               <button class="btn button modal__btn">Close confirmation</button>
+              </div>  
+         </section>
+         <!-- this is for the modal section  -->
+          <!-- <section class="modal__container ">
+              <div class="modal__div">
+               <h1 class="modal__title">Congrates!</h1>
+               <img src="assets/coin.png" alt="" class="modal__img">
+               <p class="modal__description">You Have Donated For Humankind</p>
+               <h3 class="modal__subtitle">Sucessfully</h3>
+               <button class="btn button modal__btn">Close confirmation</button>
+              </div>  
+          </section> -->
+    </main>
+    <footer>
+
+    </footer>
+
+<script src="js/header-sticky.js"></script>
 </body>
+
 </html>

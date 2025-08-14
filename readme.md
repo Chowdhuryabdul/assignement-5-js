@@ -51,7 +51,7 @@
 ## Challenges
 
 - **Sticky Navbar**: Make the navbar sticky to the top of the page.
-- **Blog Page**: Create a `blog.html` file and link it to the main page:
+- **Blog Page**: Create a `blog.html` file and link it to the main page:           
   - The blog page should contain 4 questions and their answers:
     1. What is the Document Object Model (DOM)?
     2. How do you select an element from the DOM?

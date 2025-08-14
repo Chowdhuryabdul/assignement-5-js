@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontshare  -->
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,400,500,700&f[]=satoshi@300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/component/header.css">
+    <link rel="stylesheet" href="styles/component/hero.css">
+    <link rel="stylesheet" href="styles/component/donation.css">
+    <link rel="stylesheet" href="styles/component/blog.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <title>This is the blog site</title>
+</head>
+<body>
+    <!-- this is the header section  -->
+    <header class="container">
+        <nav class="header">
+            <div class="header__menu">
+                <button class="button btn header__btn ">Blog</button>
+            </div>
+            <ul class="header__menu">
+                <li><img class="header__menu-img-1" src="assets/logo.png" alt=""></li>
+                <li class="header__description-1">Donate Bangladesh</li>
+            </ul>
+            <ul class="header__menu">
+                <li><img class="header__menu-img-2" src="assets/coin.png" alt=""></li>
+                <li class="header__description-2"></li>
+                <li class="header__description-2">5000</li>
+                <li class="header__description-2">BDT</li>
+            </ul>
+            <button class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <!-- this is the end of  header section  -->
+    <main>
+        <section class="hero container section">
+       <div class="hero__menu">
+         <button class="button btn hero__btn">Donation</button>
+        <button class="button btn hero__btn-1">History</button>
+       </div>
+       </section>
+       <section class="container section">
+        <div class="text__wrapper">
+         <div class="text__container">
+            <p class="text__description-1"> <span>96500</span> Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+            <p class="empty-container"></p>
+         </div>
+         <div class="text__container">
+            <p class="text__description-1"> <span>6500</span> Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+            <p class="empty-container"></p>
+         </div>
+         <div class="text__container">
+            <p class="text__description-1"> <span>15500</span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+            <p class="empty-container"></p>
+         </div>
+        </div>
+
+       </section>
+    </main>
+    <script src="js/time.js"></script>
+</body>
+</html>

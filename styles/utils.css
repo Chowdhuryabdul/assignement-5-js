@@ -1,0 +1,89 @@
+/* media queries  */
+/* For the XS  */
+/* @media(min-width: 475px){} */
+/* For the Sm  */
+/* @media(min-width: 640px){} */
+/* For the medium  */
+/* @media(min-width: 768px){} */
+/* For the lg  */
+/* @media(min-width: 1024px){} */
+/* For the Xl  */
+/* @media(min-width: 1280px){} */
+/* For the 2xl  */
+/* @media(min-width: 1536px){} */
+
+.btn{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    background-color: var(--clr-lime400);
+    color: var(--clr-dark);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(136, 204, 25, 0.5), 0 6px 6px rgba(136, 204, 25, 0.5), 0 0 100px -10px var(--clr-lime400)  ;
+    transition: transform 0.02s, box-shadow 0.02s;
+    line-height: 1
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(136, 204, 25, 0.25), 0 10px 10px rgba(136, 204, 25, 0.22), 0 0 120px -10px var(--clr-lime400)  ;
+}
+
+.container{
+    width: 100%; /* it is not good to use percentae in width, but i am using here because smaller than moblie screen is very small, so i need it to use whole availabel area */
+   margin-right: auto;
+   margin-left: auto;
+   /* margin: 0 auto; i can uses this shorthand form of margin, but it will not allow us to put margin top and bottom those has the container utlity class, because contianer utility class get the highest priority in the cascading */
+   padding-left:0.5rem ;
+   padding-right: 0.5rem;
+   /* border: 1px solid red; */
+}
+
+.section{
+    margin-top: 1rem;
+}
+
+
+
+/* media queries  */
+/* For the XS  */
+@media(min-width: 475px){
+   .container{
+    max-width: 475px;
+   } 
+};
+/* For the Sm  */
+@media(min-width: 640px){
+    .container{
+    max-width: 640px;
+   }
+}
+/* For the medium  */
+@media(min-width: 768px){
+   .container{
+    max-width: 768px;
+   }
+   .section{
+    margin-top: 3rem;
+}
+}
+/* For the lg  */
+@media(min-width: 1024px){
+    .container{
+    max-width: 1024px;
+   }
+}
+/* For the Xl  */
+@media(min-width: 1280px){
+    .container{
+    max-width: 1280px;
+   }
+}
+/* For the 2xl  */
+@media(min-width: 1536px){
+    .container{
+    max-width: 1536px;
+   }
+}
