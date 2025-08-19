@@ -36,7 +36,7 @@
             <ul class="header__menu">
                 <li><img class="header__menu-img-2" src="assets/coin.png" alt=""></li>
                 <li class="header__description-2"></li>
-                <li class="header__description-2">5000</li>
+                <li id="primary-amount" class="header__description-2">5000</li>
                 <li class="header__description-2">BDT</li>
             </ul>
             <button class="header__bars">
@@ -54,51 +54,51 @@
         <!-- this the hero section  -->
        <section class="hero container section">
        <div class="hero__menu">
-         <button class="button btn hero__btn">Donation</button>
-        <button class="button btn hero__btn-1">History</button>
+         <button id="donation-btn-show" class="button btn hero__btn">Donation</button>
+        <button id="history-btn-show" class="button btn hero__btn-1">History</button>
        </div>
        </section>
         <!-- this the end of the hero section  -->
          <!-- this is the donation card start -->
+     <section id="donation-form" >
+              <!-- project-1  -->
          <section class="container section donation__card ">
-            <!-- project-1  -->
+            
              <div class="donation__card-part-first">
                 <img class="donation__img" src="assets/noakhali.png" alt="First project picture">
              </div>
              <div class="donation__card-part-second">
                <ul class="donation__menu">
                 <li class="donation__sub-menu-img"><img src="assets/coin.png" alt=""></li>
-                <li class="donation__sub-menu">0</li>
+                <li id="donate__flood-noakhali" class="donation__sub-menu">0</li>
                 <li class="donation__sub-menu">BDT</li>
                </ul>
                 <h3 class="donation__title">Donate for Flood at Noakhali, Bangladesh</h3>
                 <p class="donation__description"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input class="donation__inputfield" type="number" placeholder="Write donation amount">
-                <button class="btn button donation__btn">Donate Now</button>
+                <input id="donate__inputfield-flood-noakhali" class="donation__inputfield" type="number" placeholder="Write donation amount" autocomplete="off">
+                <button id="donate__btn-flood-noakhali" class="btn button donation__btn">Donate Now</button>
              </div>
              
               <!-- this is the donation card end -->
          </section>
          <!-- project 2  -->
            <section class="container section donation__card ">
-           
              <div class="donation__card-part-first">
                 <img class="donation__img" src="assets/feni.png" alt="First project picture">
              </div>
              <div class="donation__card-part-second">
                <ul class="donation__menu">
                 <li class="donation__sub-menu-img"><img src="assets/coin.png" alt=""></li>
-                <li class="donation__sub-menu">600</li>
+                <li id="donate__display-feni" class="donation__sub-menu">0</li>
                 <li class="donation__sub-menu">BDT</li>
                </ul>
                 <h3 class="donation__title">Donate for Flood Relief in Feni, Bangladesh</h3>
                 <p class="donation__description"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                <input class="donation__inputfield" type="number" placeholder="Write donation amount">
-                <button class="btn button donation__btn">Donate Now</button>
-             </div>
-             
-              <!-- this is the donation card end -->
+                <input id="donate__inputfield-feni" class="donation__inputfield" type="number" placeholder="Write donation amount" autocomplete="off">
+                <button id="donate__btn-flood-feni"  class="btn button donation__btn">Donate Now</button>
+             </div>            
          </section>
+
          <!-- project 3  -->
            <section class="container section donation__card ">
              <div class="donation__card-part-first">
@@ -113,35 +113,50 @@
                 <h3 class="donation__title">Aid for Injured in the Quota Movement</h3>
                 <p class="donation__description"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <input class="donation__inputfield" type="number" placeholder="Write donation amount">
-                <button class="btn button donation__btn">Donate Now</button>
+                <button id="donate__btn-quota-movement" class="btn button donation__btn">Donate Now</button>
              </div>             
-         <!-- this is the donation card end -->
          </section>
-         <section class="modal__container section container">
+          </section>
+         <!-- this is the donation card end -->
+
+
+         <!-- modal section  -->
+         <section id="modal" class="modal__container section container hide">
              <div class="modal__div">
                <h1 class="modal__title">Congrates!</h1>
                <img src="assets/coin.png" alt="" class="modal__img">
+               <p id="empty-container" ></p>
                <p class="modal__description">You Have Donated For Humankind</p>
                <h3 class="modal__subtitle">Sucessfully</h3>
-               <button class="btn button modal__btn">Close confirmation</button>
+               <button id="modal__btn" class="btn button modal__btn">Close confirmation</button>
               </div>  
          </section>
-         <!-- this is for the modal section  -->
-          <!-- <section class="modal__container ">
-              <div class="modal__div">
-               <h1 class="modal__title">Congrates!</h1>
-               <img src="assets/coin.png" alt="" class="modal__img">
-               <p class="modal__description">You Have Donated For Humankind</p>
-               <h3 class="modal__subtitle">Sucessfully</h3>
-               <button class="btn button modal__btn">Close confirmation</button>
-              </div>  
-          </section> -->
-    </main>
-    <footer>
 
-    </footer>
+         <!-- this is the history section  -->
+         <section id="history-section" class="container section hidden">
+        <div class="text__wrapper">
+         <div class="text__container">
+            <p class="text__description-1"> <span id="total-donated-noakhali">0</span> Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+            <ul class="empty-container-noakhali"></ul>
+         </div>
+         <div class="text__container">
+            <p class="text__description-1"> <span id="total-donated-feni">0</span> Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+            <p class="empty-container-feni"></p>
+         </div>
+         <div class="text__container">
+            <p class="text__description-1"> <span span span id="total-donated-quota" >0</span> Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+            <p class="empty-container-quota"></p>
+         </div>
+        </div>
+       </section>
+    </main>
+
 
 <script src="js/header-sticky.js"></script>
+<script src="js/time.js"></script>
+<script src="js/donate-noakhali.js"></script>
+<script src="js/donate-feni.js"></script>
+<script src="js/library.js"></script>
+<script src="js/features.js"></script>
 </body>
-
 </html>

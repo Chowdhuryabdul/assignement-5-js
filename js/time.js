@@ -31,7 +31,10 @@ for (let dateContainer of theContainersForDate){
     dateContainer.appendChild(p)   
 } */
 
-const containersOfDateAndTime = document.querySelectorAll('.empty-container')
+const containerOfDateAndTimeForNoakhali = document.querySelector('.empty-container-noakhali')
+const containerOfDateAndTimeForFeni = document.querySelector('.empty-container-feni')
+
+
 function formatDateTimeWithTimezone(date) {
     // Step 1 – Days and Months Arrays
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -65,7 +68,8 @@ function formatDateTimeWithTimezone(date) {
     ${gmtOffset} ${timezoneInfo} → Timezone details. */
 }
 
-for (let container of containersOfDateAndTime) {
+
+/* for (let container of containerOfDateAndTime) {
     // console.log(container);
     const p = document.createElement('p')
     p.innerText = formatDateTimeWithTimezone(new Date());
@@ -73,8 +77,19 @@ for (let container of containersOfDateAndTime) {
     // p.style.backgroundColor = 'yellow'
     // p.style.width = 'fit-content'
     p.style.cssText = 'color: red; background-color: yellow; width: fit-content; margin-bottom: 1rem'
-    container.appendChild(p)
-}
+    containerOfDateAndTime.appendChild(p)
+} */
+const p = document.createElement('p')
+    p.innerText = formatDateTimeWithTimezone(new Date());
+    // p.style.color = 'red'
+    // p.style.backgroundColor = 'yellow'
+    // p.style.width = 'fit-content'
+    p.style.cssText = 'color: red; background-color: yellow; width: fit-content; margin-bottom: 1rem'
+    containerOfDateAndTimeForNoakhali.appendChild(p)
+    containerOfDateAndTimeForFeni.appendChild(p)
+
+
+
 
 
 

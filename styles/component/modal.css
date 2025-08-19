@@ -9,7 +9,10 @@
     right: 0;
     width: 100vh;
     height: 100vh;
-    display: none;
+    /* display: none; */
+}
+.hide{
+   display: none;
 }
 
 
