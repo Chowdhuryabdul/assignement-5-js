@@ -33,6 +33,7 @@ for (let dateContainer of theContainersForDate){
 
 const containerOfDateAndTimeForNoakhali = document.querySelector('.empty-container-noakhali')
 const containerOfDateAndTimeForFeni = document.querySelector('.empty-container-feni')
+const containerOfDateAndTimeForQuota = document.querySelector('.empty-container-quota')
 
 
 function formatDateTimeWithTimezone(date) {
@@ -79,14 +80,15 @@ function formatDateTimeWithTimezone(date) {
     p.style.cssText = 'color: red; background-color: yellow; width: fit-content; margin-bottom: 1rem'
     containerOfDateAndTime.appendChild(p)
 } */
-const p = document.createElement('p')
-    p.innerText = formatDateTimeWithTimezone(new Date());
-    // p.style.color = 'red'
-    // p.style.backgroundColor = 'yellow'
-    // p.style.width = 'fit-content'
-    p.style.cssText = 'color: red; background-color: yellow; width: fit-content; margin-bottom: 1rem'
-    containerOfDateAndTimeForNoakhali.appendChild(p)
-    containerOfDateAndTimeForFeni.appendChild(p)
+// const p = document.createElement('p')
+//     p.innerText = formatDateTimeWithTimezone(new Date());
+//     // p.style.color = 'red'
+//     // p.style.backgroundColor = 'yellow'
+//     // p.style.width = 'fit-content'
+//     p.style.cssText = 'color: red; background-color: yellow; width: fit-content; margin-bottom: 1rem'
+//     containerOfDateAndTimeForNoakhali.appendChild(p)
+//     containerOfDateAndTimeForFeni.appendChild(p)
+//     containerOfDateAndTimeForQuota.appendChild(p)
 
 
 

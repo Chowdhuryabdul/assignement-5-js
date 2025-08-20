@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+     font-size: var(--size-4xl);
+     font-weight: 800;
+     
+     
+
+}
+
+.text__container{
+    padding: 2rem;
+    /* display: flex; */
+    grid-area: 1.5rem;
+    border-radius: 1em;
+    border: 1px solid var(--clr-zinc400) ;
+    margin: 1rem 0;
+    
+}
+
+.text__description-1{
+    color: var(--clr-dark);
+    font-size: var(--size-xl);
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.text__description-2{
+    color: var(--clr-zinc400);
+    font-size: var(--size-base);
+    font-weight: 300;
+   
+}

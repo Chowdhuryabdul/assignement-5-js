@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontshare  -->
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,400,500,700&f[]=satoshi@300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/component/header.css">
+    <link rel="stylesheet" href="styles/component/hero.css">
+    <link rel="stylesheet" href="styles/component/donation.css">
+    <link rel="stylesheet" href="styles/component/history.css">
+    <link rel="stylesheet" href="styles/component/blog.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <title>This the blog Section</title>
+</head>
+<body>
+    
+       <section class="container section">
+        <div class="text__wrapper">
+            <h1>Welcome to the blog page</h1>
+         <div class="text__container">
+            <p class="text__description-1"> What is the Document Object Model (DOM)?</p>
+            <p class="empty-container">The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. This guide will introduce the DOM, look at how the DOM represents an HTML document in memory and how to use APIs to create web content and applications.</p>
+         </div>
+         <div class="text__container">
+            <p class="text__description-1">How do you select an element from the DOM?</p>
+            <p class="empty-container">The initial step is to choose, or locate the correct element within the DOM. Similar to how you select text in a word processor for editing, this selection can be accomplished through different methods, such as . getElementById() and . querySelector() .</p>
+         </div>
+         <div class="text__container">
+            <p class="text__description-1">What is event delegation in the context of the DOM, and why is it useful?</p>
+            <p class="empty-container">Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.</p>
+         </div>
+         <div class="text__container">
+            <p class="text__description-1">How do you manipulate an element's attributes and styles using the DOM?</p>
+            <p class="empty-container">The DOM is a W3C (World Wide Web Consortium) standard. The DOM defines a standard for accessing documents: "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.</p>
+         </div>
+        </div>
+       </section>
+
+       <section class="hero container section">
+       <div class="hero__menu">
+         <button id="main__btn" class="button btn hero__btn">Main Page</button>
+       </div>
+       </section>
+       <script src="js/blog.js"></script>
+       <!-- <script src="js/features.js"></script> -->
+</body>
+</html>
